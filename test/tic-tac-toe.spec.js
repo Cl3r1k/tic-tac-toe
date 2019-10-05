@@ -8,10 +8,10 @@ describe('TicTacToe', () => {
             game = new TicTacToe();
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(0, 1)
+            game.nextTurn(0, 1) // turn 'x'
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'o'
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 2)
@@ -3409,7 +3409,7 @@ describe('TicTacToe', () => {
             let game;
 
             game = new TicTacToe();
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3417,7 +3417,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3425,7 +3425,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 2)
+            game.nextTurn(2, 2) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3433,7 +3433,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 2)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3441,7 +3441,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(0, 2)
+            game.nextTurn(0, 2) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3449,7 +3449,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3457,7 +3457,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3465,7 +3465,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3473,7 +3473,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 0)
+            game.nextTurn(1, 0) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3481,7 +3481,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 0)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3489,7 +3489,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3497,7 +3497,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3505,7 +3505,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3513,7 +3513,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 2)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(0, 1)
+            game.nextTurn(0, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3521,7 +3521,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(0, 2)
+            game.nextTurn(0, 2) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -3529,7 +3529,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(0, 0)
+            game.nextTurn(0, 0) // turn 'o' again - WIN
             expect(game.isFinished()).to.equal(true)
             expect(game.getWinner()).to.equal('o')
             expect(game.noMoreTurns()).to.equal(false);
@@ -4521,7 +4521,7 @@ describe('TicTacToe', () => {
 
 
             game = new TicTacToe();
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4529,7 +4529,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 2)
+            game.nextTurn(2, 2) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4537,7 +4537,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 2)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4545,7 +4545,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(0, 1)
+            game.nextTurn(0, 1) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4553,7 +4553,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 1)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4561,7 +4561,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(0, 1)
+            game.nextTurn(0, 1) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4569,7 +4569,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 1)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 0)
+            game.nextTurn(2, 0) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4577,7 +4577,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 0)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4585,7 +4585,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(2, 1)
+            game.nextTurn(2, 1) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4593,7 +4593,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4601,7 +4601,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4609,7 +4609,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(0, 0)
+            game.nextTurn(0, 0) // turn 'x' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4617,7 +4617,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(0, 0)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 0)
+            game.nextTurn(2, 0) // turn 'o'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4625,7 +4625,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(2, 0)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 2)
+            game.nextTurn(1, 2) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4633,7 +4633,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 2)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(1, 0)
+            game.nextTurn(1, 0) // turn 'o' again
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4641,7 +4641,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 0)).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(1, 1)
+            game.nextTurn(1, 1) // turn 'x'
             expect(game.isFinished()).to.equal(false)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(false);
@@ -4649,7 +4649,7 @@ describe('TicTacToe', () => {
             expect(game.getFieldValue(1, 1)).to.equal('x')
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
-            game.nextTurn(0, 2)
+            game.nextTurn(0, 2) // turn 'o' again - NO Winners
             expect(game.isFinished()).to.equal(true)
             expect(game.getWinner()).to.equal(null)
             expect(game.noMoreTurns()).to.equal(true);
